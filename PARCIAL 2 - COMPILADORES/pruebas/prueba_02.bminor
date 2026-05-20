@@ -1,0 +1,8 @@
+// pruebas/prueba_O2.bminor
+main: function integer () = {
+    x: integer = 42;
+    y: integer = x * 100; // Cálculo muerto local. Jamás se lee 'y'.
+    
+    print x;
+    return 0;
+}

@@ -1,0 +1,13 @@
+// pruebas/prueba_O1.bminor
+main: function integer () = {
+    a: integer = 2 + 3 * 4;  // Provoca Constant Folding directo (3*4=12 -> 2+12=14)
+    b: integer = a + 0;      // Provoca Simplificación Algebraica (Identidad aditiva)
+    
+    if 1 < 2 {               // Provoca comparación constante (CMPI -> True)
+        print b;
+    } else {
+        print 999;           // Desaparece al volverse código inalcanzable
+    }
+    
+    return 0;
+}

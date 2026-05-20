@@ -1,0 +1,10 @@
+main: function integer () = {
+	i: integer;
+  x: integer = 5;
+
+	for(i = 0; i < 100; i++) {
+		print x * 2;
+	}
+
+	return 0;
+}
