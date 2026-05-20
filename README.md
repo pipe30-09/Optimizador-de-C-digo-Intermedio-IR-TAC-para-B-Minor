@@ -24,7 +24,7 @@ PARCIAL 2 - COMPILADORES/
 
 ---
 
-## 🛠️ Niveles de Optimización Implementados
+## Niveles de Optimización Implementados
 
 El comportamiento del optimizador se segmenta a través de banderas de la línea de comandos de manera progresiva:
 
